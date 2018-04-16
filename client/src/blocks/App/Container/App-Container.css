@@ -1,0 +1,21 @@
+.App-Container {
+    width: 1600px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 15px 0;
+}
+
+@media (max-width: 1040px) {
+    .App-Container {
+        width: calc(100% - 30px);
+        padding: 0 15px 15px 15px;
+    }
+}
+
+@media (max-width: 1600px) and (min-width: 1040px) {
+    .App-Container {
+        width: 1040px;
+    }
+}
