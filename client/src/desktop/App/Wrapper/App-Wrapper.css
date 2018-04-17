@@ -1,0 +1,11 @@
+.App-Wrapper {
+    grid-auto-rows: 250px;
+    grid-row-gap: 30px;
+}
+
+@media (max-width: 1040px) {
+    .App-Wrapper {
+        grid-auto-rows: 220px;
+        grid-row-gap: 20px;
+    }
+}

@@ -1,0 +1,4 @@
+.App-Wrapper {
+    grid-auto-rows: 220px;
+    grid-row-gap: 20px;
+}

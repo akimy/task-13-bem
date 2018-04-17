@@ -1,10 +1,13 @@
 import React from 'react';
 import { decl, Bem } from 'bem-react-core';
-import Logo from 'b:Logo';
 
 export default decl({
   block: 'App',
-  elem: 'Header',
-  tag: 'header',
-});
 
+  willInit() {
+    this.state = {
+      data: [],
+      imageSize: '@2x',
+    };
+  },
+});

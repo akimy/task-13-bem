@@ -1,0 +1,6 @@
+.App-Container {
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}

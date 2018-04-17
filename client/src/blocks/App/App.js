@@ -9,22 +9,18 @@ import '../../assets/fonts/fonts.css';
 export default decl({
   block: 'App',
   tag: 'div',
-  willInit() {
-    this.state = {
-      data: [],
-    };
-  },
   willMount() {
-    fetch('/data').then(res => res.json()).then(data => {
-      data = data.map(card => {
+    fetch('/data').then(res => res.json()).then((data) => {
+      data = data.map((card) => {
         const { image } = card;
         if (image) {
+          const { imageSize } = this.state;
           const imageId = parseInt(image.slice(4));
-          card.image = `/images/${imageId}@3x.png`;
+          card.image = `/images/${imageId}${imageSize}.png`;
         }
         return card;
-      })
-      this.setState({ data })
+      });
+      this.setState({ data });
     });
   },
   content() {

@@ -1,11 +1,4 @@
 .App-Header {
     display: flex;
-    min-height: 116px;
     align-items: center;
-}
-
-@media (max-width: 1040px) {
-    .App-Header {
-        min-height: 80px;
-    }
 }
